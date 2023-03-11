@@ -43,6 +43,10 @@ import numpy as np
 from tensorflow import keras
 from tensorflow.keras import layers
 
+# from tensorflow.python.compiler.mlcompute import mlcompute
+
+# mlcompute.set_mlc_device(device_name='gpu')
+
 num_classes = 10
 input_shape = (28, 28, 1)
 
