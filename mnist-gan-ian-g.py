@@ -114,7 +114,7 @@ def main():
                 callbacks.TensorBoard('./logs', update_freq=1),
                 callbacks.BackupAndRestore(backup_dir="./tmp/backup"),
                 callbacks.ModelCheckpoint(
-                filepath="./checkpoints/model_best{epoch:02d}.hdf5",
+                filepath="./checkpoints/model_best.hdf5",
                 save_weights_only=True,
                 monitor='Generator loss',
                 mode='min',
